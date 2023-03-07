@@ -1,6 +1,30 @@
 {
     "require": {
+        "php": "^8.0",
         "twilio/sdk": "^6.44",
         "vlucas/phpdotenv": "^5.5"
+    },
+    "require-dev": {
+        "psalm/plugin-mockery": "^0.9.1",
+        "psalm/plugin-phpunit": "^0.16.1",
+        "vimeo/psalm": "^4.10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "laminas/laminas-coding-standard": "^2.5"
+    },
+    "scripts": {
+        "check": [
+            "@cs-check"
+        ],
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf",
+        "static-analysis": "psalm --shepherd --stats",
+        "post-install-cmd": [
+            "php -r \"copy('.env.example', '.env');\""
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
