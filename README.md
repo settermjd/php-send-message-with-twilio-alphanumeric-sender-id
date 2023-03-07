@@ -25,4 +25,4 @@ php index.php
 
 ## Have a Question?
 
-If you have any questions, DM me on Twitter or email me matthew[at]matthewsetter.com.
+If you have any questions, DM me on [Twitter](https://twitter.com/settermjd) or email me matthew[at]matthewsetter.com.
